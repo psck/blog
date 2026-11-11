@@ -1,59 +1,65 @@
 baseURL = 'https://psck.github.io/blog/'
+title = "Marcin's Blog"
+theme = 'congo'
 defaultContentLanguage = 'en'
-locale = 'en-us'
-title = "Never Again"
-theme = 'PaperMod'
 
 [pagination]
-  pagerSize = 5
-
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 30
-
-[params]
-  env = "production"
-  title = "Never Again"
-  description = "Notes on software architecture, AI agents, context engineering, and engineering realities."
-  keywords = ["Blog", "AI", "Architecture", "Software Engineering"]
-  author = "MKP"
-  defaultTheme = "auto"
-  disableThemeToggle = false
-
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  UseHugoToc = true
-
-  [params.homeInfoParams]
-    Title = "Welcome 👋"
-    Content = "Writing about software delivery, AI systems, agentic memory, and systems engineering."
-
-  [params.socialIcons]
-    # Configure your links here when ready:
-    # [[params.socialIcons]]
-    #   name = "github"
-    #   url = "https://github.com/<username>"
-    # [[params.socialIcons]]
-    #   name = "linkedin"
-    #   url = "https://linkedin.com/in/<username>"
+  pagerSize = 10
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[params]
+  colorScheme = "congo"
+  defaultAppearance = "auto"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+
+  [params.header]
+    layout = "basic"
+    showTitle = true
+
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = false
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = "profile"
+    showRecent = true
+    recentLimit = 5
+
+  [params.article]
+    showDate = true
+    showAuthor = true
+    showBreadcrumbs = true
+    showHeadingAnchors = true
+    showPagination = true
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = true
+    showWordCount = false
+
+  [params.author]
+    name = "Marcin"
+    headline = "Software Delivery, AI Systems & Context Engineering"
+    bio = "Notes on software delivery across enterprise kitchens, agent memory, and systems engineering."
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    pageRef = "posts"
+    weight = 10
+
+  [[menu.main]]
+    name = "Tags"
+    pageRef = "tags"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "search"
+    weight = 99
+    [menu.main.params]
+      action = "search"

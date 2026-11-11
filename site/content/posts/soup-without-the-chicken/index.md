@@ -7,6 +7,7 @@ summary: "Software delivery across enterprise organizations looks a lot like a c
 ---
 
 Conferences are good for tracking vendor roadmaps and better for checking keynote slides against operational reality (which tends to arrive late and uninvited). After spending the day comparing architectures, sitting through technical sessions, and trading notes in the hallways, one pattern kept coming back.
+{.lead}
 
 ## Everyone Is Cooking the Same Soup
 
@@ -24,7 +25,9 @@ So most setups copy the human process onto the agents, with roles, a scrum maste
 
 The other one is information and memory management, and the consensus is there its the absolute necessity to have. Very refreshing presentation from Vitaliy who touched on multiple subjects, all circling around Information Management and agent context. I do believe it is important, because:
 
-> Agentic memory is the chicken in this soup. Take it out and what remains is hot water with good intentions, however many pipelines you simmer around it.
+{{< alert "lightbulb" >}}
+**Agentic memory is the chicken in this soup.** Take it out and what remains is hot water with good intentions, however many pipelines you simmer around it.
+{{< /alert >}}
 
 The problem sits deeper than any single toolchain. The SDLC is one massive state management problem (tickets, Git history, architecture decisions, CI telemetry), and every new agent session starts with none of it.
 
