@@ -1,0 +1,59 @@
+baseURL = 'https://example.org/'
+defaultContentLanguage = 'en'
+locale = 'en-us'
+title = "Marcin's Blog"
+theme = 'PaperMod'
+
+[pagination]
+  pagerSize = 5
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+
+[params]
+  env = "production"
+  title = "Marcin's Blog"
+  description = "Notes on software architecture, AI agents, context engineering, and engineering realities."
+  keywords = ["Blog", "AI", "Architecture", "Software Engineering"]
+  author = "Marcin"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+  [params.homeInfoParams]
+    Title = "Welcome 👋"
+    Content = "Writing about software delivery, AI systems, agentic memory, and systems engineering."
+
+  [params.socialIcons]
+    # Configure your links here when ready:
+    # [[params.socialIcons]]
+    #   name = "github"
+    #   url = "https://github.com/<username>"
+    # [[params.socialIcons]]
+    #   name = "linkedin"
+    #   url = "https://linkedin.com/in/<username>"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
