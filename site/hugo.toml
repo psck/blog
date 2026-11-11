@@ -1,7 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://psck.github.io/blog/'
 defaultContentLanguage = 'en'
 locale = 'en-us'
-title = "Marcin's Blog"
+title = "Never Again"
 theme = 'PaperMod'
 
 [pagination]
@@ -26,10 +26,10 @@ theme = 'PaperMod'
 
 [params]
   env = "production"
-  title = "Marcin's Blog"
+  title = "Never Again"
   description = "Notes on software architecture, AI agents, context engineering, and engineering realities."
   keywords = ["Blog", "AI", "Architecture", "Software Engineering"]
-  author = "Marcin"
+  author = "MKP"
   defaultTheme = "auto"
   disableThemeToggle = false
 

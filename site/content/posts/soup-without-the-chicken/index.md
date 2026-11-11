@@ -18,7 +18,7 @@ I saw at least four presentations by good and inspiring speakers, all telling ho
 
 I believe there are two reasons for that. The first is that we keep serving grandma's dish, the old Agile manifesto of people and interactions over tools and processes, in a kitchen where the role of blender and human suddenly got reversed.
 
-![Look at my jira](/assets/LookAtMe.jpg)
+![Look at my jira](assets/LookAtMe.jpg)
 
 So most setups copy the human process onto the agents, with roles, a scrum master and a jira board (sic!) to report to. That is eating soup with a fork. Maybe the recipe is fine and we just need new cutlery, and [Anthropic's approach to SDLC](https://claude.com/resources/articles/the-ai-native-sdlc-playbook), maybe combined with openspec which i'm big fan of this week, surely looks like one.
 
